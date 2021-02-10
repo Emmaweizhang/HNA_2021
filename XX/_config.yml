@@ -1,0 +1,5 @@
+# in _config.yml
+title: "Health Needs Assessment 2021"
+logo: images/logo.png
+execute:
+  execute_notebooks: "off"
