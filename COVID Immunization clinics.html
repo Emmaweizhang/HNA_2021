@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID Immunization planning &#8212; Health Needs Assessment 2021</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Web scraping example" href="Webscrapingexample.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Health Needs Assessment 2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Jupyter%20book.html">
+   What is Jupyter book?
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="HealthNeedsAssessment2021.html">
+   Health Needs Assessment 2021
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Webscrapingexample.html">
+   Web scraping example
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   COVID Immunization planning
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/COVID Immunization clinics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/COVID Immunization clinics.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="covid-immunization-planning">
+<h1>COVID Immunization planning<a class="headerlink" href="#covid-immunization-planning" title="Permalink to this headline">¶</a></h1>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clinic</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;296 GP clinics.xlsx&#39;</span><span class="p">)</span>
+<span class="n">clinic</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SubmissionID</th>
+      <th>Practice name</th>
+      <th>Postcode</th>
+      <th>Suburb</th>
+      <th>Tier</th>
+      <th>NIP only</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1106</td>
+      <td>ARROWHEAD MEDICAL CENTRE</td>
+      <td>3030</td>
+      <td>Point Cook</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1126</td>
+      <td>Coburg Family Medical Centre</td>
+      <td>3058</td>
+      <td>Coburg</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>114</td>
+      <td>Niddrie Medical</td>
+      <td>3042</td>
+      <td>Niddrie</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1264</td>
+      <td>Inner North Medical Clinic</td>
+      <td>3057</td>
+      <td>Brunswick East</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1425</td>
+      <td>Medical One - Moonee Ponds</td>
+      <td>3039</td>
+      <td>Moonee Ponds</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">disable_max_rows</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>DataTransformerRegistry.enable(&#39;default&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">altair</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\Emma.Zhang\Anaconda3
+
+  added / updated specs:
+    - altair
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    altair-4.1.0               |             py_1         614 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         614 KB
+
+The following NEW packages will be INSTALLED:
+
+  altair             conda-forge/noarch::altair-4.1.0-py_1
+
+
+
+Downloading and Extracting Packages
+
+altair-4.1.0         | 614 KB    |            |   0% 
+altair-4.1.0         | 614 KB    | 2          |   3% 
+altair-4.1.0         | 614 KB    | ####6      |  47% 
+altair-4.1.0         | 614 KB    | ########## | 100% 
+altair-4.1.0         | 614 KB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clinic</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SubmissionID</th>
+      <th>Practice name</th>
+      <th>Postcode</th>
+      <th>Suburb</th>
+      <th>Tier</th>
+      <th>NIP only</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1106</td>
+      <td>ARROWHEAD MEDICAL CENTRE</td>
+      <td>3030</td>
+      <td>Point Cook</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1126</td>
+      <td>Coburg Family Medical Centre</td>
+      <td>3058</td>
+      <td>Coburg</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>114</td>
+      <td>Niddrie Medical</td>
+      <td>3042</td>
+      <td>Niddrie</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1264</td>
+      <td>Inner North Medical Clinic</td>
+      <td>3057</td>
+      <td>Brunswick East</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1425</td>
+      <td>Medical One - Moonee Ponds</td>
+      <td>3039</td>
+      <td>Moonee Ponds</td>
+      <td>1</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_hide_input tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">select_tier</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Select&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Tier&#39;</span><span class="p">],</span> <span class="n">init</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Tier&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+    <span class="n">bind</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">binding_range</span><span class="p">(</span><span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_multi</span><span class="p">(</span><span class="n">fields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;NIP only&#39;</span><span class="p">,</span> <span class="s1">&#39;Tier&#39;</span><span class="p">])</span>
+
+<span class="n">color</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">select_tier</span><span class="p">,</span> 
+                     <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;NIP only:N&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">None</span><span class="p">),</span>
+                     <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>
+
+<span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">clinic</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Postcode:Q&#39;</span><span class="p">),</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;Practice name&#39;</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="s1">&#39;-x&#39;</span><span class="p">),</span>
+    <span class="n">tooltip</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Practice name&#39;</span><span class="p">,</span> <span class="s1">&#39;Postcode&#39;</span><span class="p">]</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;GP clinics for immunization&#39;</span>
+            <span class="p">)</span><span class="o">.</span> <span class="n">add_selection</span><span class="p">(</span><span class="n">select_tier</span><span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">select_tier</span><span class="p">)</span><span class="o">.</span><span class="n">transform_window</span><span class="p">(</span><span class="n">rank</span><span class="o">=</span><span class="s1">&#39;rank(Postcode)&#39;</span><span class="p">,</span>
+                                                                                        <span class="n">sort</span><span class="o">=</span><span class="p">[</span><span class="n">alt</span><span class="o">.</span><span class="n">SortField</span><span class="p">(</span><span class="s1">&#39;Postcode&#39;</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s1">&#39;descending&#39;</span><span class="p">)]</span>
+                                                                                        <span class="p">)</span>
+
+<span class="n">legend</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">clinic</span><span class="p">)</span><span class="o">.</span><span class="n">mark_rect</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;NIP only:N&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Tier:O&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">select_tier</span><span class="p">)</span>
+
+<span class="n">chart</span> <span class="o">|</span> <span class="n">legend</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div id="altair-viz-a7993258d725456c821712bfcaa7a939"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-a7993258d725456c821712bfcaa7a939") {
+      outputDiv = document.getElementById("altair-viz-a7993258d725456c821712bfcaa7a939");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": "bar", "encoding": {"tooltip": [{"type": "nominal", "field": "Practice name"}, {"type": "quantitative", "field": "Postcode"}], "x": {"type": "quantitative", "field": "Postcode"}, "y": {"type": "nominal", "field": "Practice name", "sort": "-x"}}, "selection": {"Select": {"type": "single", "fields": ["Tier"], "init": {"Tier": 1}, "bind": {"input": "range", "max": 6, "min": 1, "step": 1}}}, "title": "GP clinics for immunization", "transform": [{"filter": {"selection": "Select"}}, {"window": [{"op": "rank", "field": "Postcode", "as": "rank"}], "sort": [{"field": "Postcode", "order": "descending"}]}]}, {"mark": "rect", "encoding": {"color": {"condition": {"type": "nominal", "field": "NIP only", "legend": null, "selection": "Select"}, "value": "lightgray"}, "x": {"type": "ordinal", "field": "Tier"}, "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "NIP only"}}, "selection": {"Select": {"type": "single", "fields": ["Tier"], "init": {"Tier": 1}, "bind": {"input": "range", "max": 6, "min": 1, "step": 1}}}}], "data": {"name": "data-16ce58f8079f2acbd474de3ea19ddbf5"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-16ce58f8079f2acbd474de3ea19ddbf5": [{"SubmissionID": 1106, "Practice name": "ARROWHEAD MEDICAL CENTRE", "Postcode": 3030, "Suburb": "Point Cook", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1126, "Practice name": "Coburg Family Medical Centre", "Postcode": 3058, "Suburb": "Coburg", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 114, "Practice name": "Niddrie Medical", "Postcode": 3042, "Suburb": "Niddrie", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1264, "Practice name": "Inner North Medical Clinic", "Postcode": 3057, "Suburb": "Brunswick East", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1425, "Practice name": "Medical One - Moonee Ponds", "Postcode": 3039, "Suburb": "Moonee Ponds", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1520, "Practice name": "Wyndhamvale Health Care", "Postcode": 3024, "Suburb": "Wyndham Vale", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1569, "Practice name": "Medical One - QV", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1583, "Practice name": "Medical One - Sunshine", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1601, "Practice name": "Medical One - Sydenham", "Postcode": 3037, "Suburb": "Sydenham", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1620, "Practice name": "Medical One Taylors Lakes", "Postcode": 3038, "Suburb": "Taylors Lakes", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1638, "Practice name": "Medical One - Victoria Gardens", "Postcode": 3121, "Suburb": "Richmond", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 168, "Practice name": "Collins Place Medical Clinic", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1818, "Practice name": "Mid-Town Medical Clinic", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1828, "Practice name": "Westcare Medical Centre", "Postcode": 3337, "Suburb": "Melton West", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 1930, "Practice name": "Sunshine City Medical Centre", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2187, "Practice name": "Roxburgh Park Superclinic", "Postcode": 3064, "Suburb": "ROXBURGH PARK", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2212, "Practice name": "Altona Superclinic", "Postcode": 3028, "Suburb": "Altona Meadows", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2238, "Practice name": "Cairnlea Superclinic", "Postcode": 3142, "Suburb": "Cairnlea", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2272, "Practice name": "Craigieburn Suiperclinic", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2284, "Practice name": "Wyndham Village Medical Centre", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2302, "Practice name": "Manor Lakes Medical Centre", "Postcode": 3024, "Suburb": "Manor Lakes", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 256, "Practice name": "Bacchus Marsh Medical Centre", "Postcode": 3340, "Suburb": "Bacchus Marsh", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2562, "Practice name": "Goonawarra Medical Centre", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 279, "Practice name": "Darley Medical Centre", "Postcode": 3340, "Suburb": "Darley", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3037, "Practice name": "Craigieburn Medical & Dental Centre", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3121, "Practice name": "Moonee Ponds Medical Centre", "Postcode": 3039, "Suburb": "Moonee Ponds", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3137, "Practice name": "High Street Medical & Dental Centre Preston", "Postcode": 3072, "Suburb": "Preston", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3145, "Practice name": "Werribee Medical & Dental Centre", "Postcode": 3030, "Suburb": "Werribee", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3250, "Practice name": "Collins Street Medical Centre", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3263, "Practice name": "Pinnacle Medical Centre", "Postcode": 3027, "Suburb": "Williams Landing", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3352, "Practice name": "Romsey medical", "Postcode": 3434, "Suburb": "Romsey", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3387, "Practice name": "Eastbrooke Family Clinic Essendon", "Postcode": 3041, "Suburb": "Essendon North", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3414, "Practice name": "Eastbrooke Family Clinic Lincolnville", "Postcode": 3042, "Suburb": "Niddrie", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 3462, "Practice name": "cohealth Paisley Street", "Postcode": 3031, "Suburb": "Footscray", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 397, "Practice name": "Active Medical", "Postcode": 3023, "Suburb": "Caroline Springs", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 414, "Practice name": "Kings Park Medical Centre", "Postcode": 3037, "Suburb": "Hillside", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4184, "Practice name": "Medical Hub @ RMIT", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4240, "Practice name": "Altona North Medical Group", "Postcode": 3025, "Suburb": "Altona North", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4585, "Practice name": "IPC Health - Deer Park", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4614, "Practice name": "IPC Health - Wyndham Vale", "Postcode": 3024, "Suburb": "Wyndham Vale", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4852, "Practice name": "Yarra Medical The Hive", "Postcode": 3067, "Suburb": "ABBOTSFORD", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 4899, "Practice name": "Health Service, University of Melbourne", "Postcode": 3053, "Suburb": "Carlton", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 5022, "Practice name": "Modern Medical Caroline Springs", "Postcode": 3023, "Suburb": "Caroline Springs", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 5043, "Practice name": "Modern Medical Glenroy", "Postcode": 3046, "Suburb": "Glenroy", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 5050, "Practice name": "Modern Medical Craigieburn", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 5375, "Practice name": "cohealth Paisley Street", "Postcode": 3031, "Suburb": "Footscray", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 660, "Practice name": "M3 Health Hobsons Bay", "Postcode": 3015, "Suburb": "Spotswood", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 89, "Practice name": "Neal Street Medical Clinic", "Postcode": 3437, "Suburb": "Gisborne", "Tier": 1, "NIP only": "No"}, {"SubmissionID": 2080, "Practice name": "Gladstone Park Superclinic", "Postcode": 3043, "Suburb": "Gladstone Park", "Tier": 1, "NIP only": "Yes"}, {"SubmissionID": 1032, "Practice name": "Wellness Medicine", "Postcode": 3068, "Suburb": "Clifton Hill", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1111, "Practice name": "Edgewater Medical Centre", "Postcode": 3032, "Suburb": "Maribyrnong", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1122, "Practice name": "Moreland General Practice", "Postcode": 3056, "Suburb": "Brunswick Vic", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1276, "Practice name": "THE WESTERN MEDICAL CENTRE", "Postcode": 3012, "Suburb": "Kingsville", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1320, "Practice name": "Tullamarine Complete Health Centre", "Postcode": 3043, "Suburb": "Tullamarine", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 136, "Practice name": "Hampstead Medical", "Postcode": 3012, "Suburb": "Maidstone", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1410, "Practice name": "Boardwalk Health Medical and Skin Centre", "Postcode": 3030, "Suburb": "Point Cook", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1428, "Practice name": "ST ALBANS COMPLETE HEALTH CARE", "Postcode": 3021, "Suburb": "St Albans", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1451, "Practice name": "Gladstone Park Medical Clinic", "Postcode": 3043, "Suburb": "Tullamarine", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1470, "Practice name": "Gisborne medical centre", "Postcode": 3437, "Suburb": "Gisborne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1617, "Practice name": "Deer Park Medical Centre", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1635, "Practice name": "Vineyard Medical Centre", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1962, "Practice name": "SIA FOOTSCRAY", "Postcode": 3011, "Suburb": "Footscray", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 1963, "Practice name": "SIA ESSENDONT", "Postcode": 3040, "Suburb": "Essendon", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2030, "Practice name": "LaTrobe University Medical Centre", "Postcode": 3083, "Suburb": "bundoora", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 206, "Practice name": "SOMERTON ROAD MEDICAL CENTRE", "Postcode": 3064, "Suburb": "ROXBURGH PARK", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2326, "Practice name": "Greenvale Medical Centre", "Postcode": 3148, "Suburb": "Greenvale", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2369, "Practice name": "Hoppers Lane General Practice", "Postcode": 3030, "Suburb": "Werribee", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2372, "Practice name": "Tarneit Family Medical and Dental Centre", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 238, "Practice name": "Turn The Corner Medical Clinic", "Postcode": 3070, "Suburb": "Northcote", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2440, "Practice name": "Sunbury Medical Centre", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 249, "Practice name": "Access Health and Community", "Postcode": 3121, "Suburb": "Richmond", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2618, "Practice name": "Lancefield country practice", "Postcode": 3435, "Suburb": "Lancefield", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2818, "Practice name": "The Clinic Williamstown", "Postcode": 3016, "Suburb": "Williamstown", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2886, "Practice name": "Hoppers Crossing Medical Centre", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2947, "Practice name": "MyClinic Hoppers Crosssing", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2960, "Practice name": "Brunswick Betta Health", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 2964, "Practice name": "MyClinic Bacchus Marsh", "Postcode": 3340, "Suburb": "Bacchus Marsh", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3172, "Practice name": "Primary Medical & Dental Centre", "Postcode": 3337, "Suburb": "Melton", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 318, "Practice name": "Gap Rd Medical Centre", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3202, "Practice name": "Riddell Country Practice", "Postcode": 3431, "Suburb": "Riddells Creek", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3336, "Practice name": "Southgate Medical Centre", "Postcode": 3006, "Suburb": "Southbank", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3486, "Practice name": "Church Street Medical Centre", "Postcode": 3121, "Suburb": "Richmond", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3506, "Practice name": "Yarraville Village Family Medical Centre", "Postcode": 3013, "Suburb": "Yarraville", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3551, "Practice name": "East Brunswick Medical Centre", "Postcode": 3057, "Suburb": "Brunswick East", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3758, "Practice name": "Swanston Street Medical Centre", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3760, "Practice name": "Harding Street Medical Centre", "Postcode": 3058, "Suburb": "Coburg", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 3789, "Practice name": "Parkwood Green Medical", "Postcode": 3037, "Suburb": "Hillside", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4098, "Practice name": "Guardian Medical Highpoint", "Postcode": 3032, "Suburb": "Maribyrnong", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4108, "Practice name": "Guardian Medical Sanctuary Lakes", "Postcode": 3030, "Suburb": "Point Cook", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4110, "Practice name": "Modern Medical St Kilda Rd", "Postcode": 3004, "Suburb": "Melbourne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4112, "Practice name": "Guardian Medical Showgrounds", "Postcode": 3031, "Suburb": "Flemington", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 430, "Practice name": "Hillcrest Health Centre", "Postcode": 3047, "Suburb": "Broadmeadows", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4379, "Practice name": "Medi7 St Kilda", "Postcode": 3004, "Suburb": "Melbourne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4493, "Practice name": "North Coburg Medical Centre", "Postcode": 3058, "Suburb": "Coburg North", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4507, "Practice name": "Laverton Medical Centre", "Postcode": 3028, "Suburb": "Laverton", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4534, "Practice name": "Summerhill Medical Centre", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4572, "Practice name": "Ranges Medical", "Postcode": 3438, "Suburb": "New Gisborne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4582, "Practice name": "Westgate Health Cooperative", "Postcode": 3015, "Suburb": "South Kingsville", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4589, "Practice name": "Summit Medical Group", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4653, "Practice name": "Grantham Street General Practice", "Postcode": 3055, "Suburb": "Brunswick West", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4678, "Practice name": "East Keilor Clinic", "Postcode": 3033, "Suburb": "Keilor East", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 483, "Practice name": "Sanctuary Lake Medical Practice", "Postcode": 3030, "Suburb": "Point Cook", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4838, "Practice name": "Alphington Medical Centre", "Postcode": 3078, "Suburb": "Fairfield", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 4842, "Practice name": "Central West medical Centre", "Postcode": 3019, "Suburb": "Braybrook", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 50, "Practice name": "Moonee Ponds Super Clinic", "Postcode": 3039, "Suburb": "Moonee Ponds", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 500, "Practice name": "TLC Primary Care- Altona North", "Postcode": 3025, "Suburb": "Altona North", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 5073, "Practice name": "PVH Medical", "Postcode": 3044, "Suburb": "Pascoe Vale", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 5122, "Practice name": "North Richmond Community Health Centre", "Postcode": 3121, "Suburb": "Richmond", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 5293, "Practice name": "The Clinic Footscray", "Postcode": 3011, "Suburb": "Footscray", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 53, "Practice name": "The Crane General Practice", "Postcode": 3068, "Suburb": "Clifton Hill", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 718, "Practice name": "CBD Doctors Melbourne", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 883, "Practice name": "Complete Family Care", "Postcode": 3015, "Suburb": "Newport", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 982, "Practice name": "The neighbourhood Clinic", "Postcode": 3068, "Suburb": "Fitzroy North", "Tier": 2, "NIP only": "No"}, {"SubmissionID": 209, "Practice name": "Wyndham Health Care", "Postcode": 3030, "Suburb": "Werribee", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 2996, "Practice name": "Wyperfeld Medical Clinic", "Postcode": 3038, "Suburb": "Taylor's Lakes", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 3009, "Practice name": "Forsyth Park Medical Centre", "Postcode": 3029, "Suburb": "Truganina", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 3525, "Practice name": "Our Medical Home Williams Landing", "Postcode": 3027, "Suburb": "Williams Landing", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 4019, "Practice name": "HANSON MEDICAL CENTRE", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 4511, "Practice name": "Healthwest medical and specialist centre", "Postcode": 3029, "Suburb": "Truganina", "Tier": 2, "NIP only": "Yes"}, {"SubmissionID": 1013, "Practice name": "Burnside Medical Centre", "Postcode": 3023, "Suburb": "Burnside", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1078, "Practice name": "Doctors of Glenroy", "Postcode": 3046, "Suburb": "Glenroy", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 117, "Practice name": "Evans Street Clinic", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 119, "Practice name": "Myhealth Carlton", "Postcode": 3053, "Suburb": "Carlton", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1234, "Practice name": "Mandalay Family Clinic Hoppers Crossing", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1285, "Practice name": "Station Road Medical Centre", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1329, "Practice name": "Mandalay Family Clinic Footscray", "Postcode": 3011, "Suburb": "Footscray", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1361, "Practice name": "AIM Health / Melbourne Student Medical Centre", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1372, "Practice name": "kensington healthcare pty ltd", "Postcode": 3031, "Suburb": "Kensington", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1405, "Practice name": "DPV Health Medical & Dental Centre - Broadmeadows", "Postcode": 3047, "Suburb": "Broadmeadows", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1412, "Practice name": "Melbourne City Medical Centre", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1503, "Practice name": "Lincolnville Medical Centre", "Postcode": 3033, "Suburb": "Keilor East", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1581, "Practice name": "Durham Road Clinic", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1636, "Practice name": "Myhealth Airport West", "Postcode": 3042, "Suburb": "Airport West", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1792, "Practice name": "Preston Market Medical Centre", "Postcode": 3072, "Suburb": "Preston", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 1798, "Practice name": "Womens Health Hub", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2064, "Practice name": "Your Community Health", "Postcode": 3073, "Suburb": "East Reservoir", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2262, "Practice name": "Calder Medical Clinic", "Postcode": 3036, "Suburb": "Keilor 3036", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 24, "Practice name": "Sonic Healthplus Melbourne CBD", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2426, "Practice name": "Clifton Hill Clinic", "Postcode": 3068, "Suburb": "Clifton Hill", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2546, "Practice name": "VICTORIA STREET MEDICAL GROUP", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2557, "Practice name": "Werribee Medical Centre", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2606, "Practice name": "Derrimut Medicals", "Postcode": 3026, "Suburb": "Derrimut", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2678, "Practice name": "Lygon Court Medical Clinic", "Postcode": 3053, "Suburb": "Carlton", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2701, "Practice name": "Doctors of Coburg North", "Postcode": 3058, "Suburb": "Coburg North", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2717, "Practice name": "Grant Street Medical Centre", "Postcode": 3340, "Suburb": "Bacchus Marsh", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2785, "Practice name": "MyClinic QV", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2796, "Practice name": "MyClinic Bourke St Mall", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2799, "Practice name": "MyClinic Southbank", "Postcode": 3006, "Suburb": "Southbank", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2821, "Practice name": "MyClinic Melbourne", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2832, "Practice name": "MyClinic Tarneit", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 288, "Practice name": "Mossfiel Medical Centre", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2923, "Practice name": "MyClinic Werribee Village", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2934, "Practice name": "MyClinic Werribee Central", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2939, "Practice name": "PIER STREET MEDICAL CENTRE", "Postcode": 3018, "Suburb": "Altona", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2961, "Practice name": "Doctors of Northcote", "Postcode": 3070, "Suburb": "Northcote", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 2985, "Practice name": "Town Medical Centre", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3065, "Practice name": "Medical Centre St Albans", "Postcode": 3021, "Suburb": "St Albans", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3393, "Practice name": "ST.ALBANS FAMILY DOCTORS CLINIC", "Postcode": 3021, "Suburb": "ST.ALBANS", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3613, "Practice name": "Essendon Fields Medical Centre", "Postcode": 3041, "Suburb": "Essendon Fields", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3676, "Practice name": "MC Medical and Dental", "Postcode": 3008, "Suburb": "Docklands", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3776, "Practice name": "Parkwood Green Medical Romsey", "Postcode": 3434, "Suburb": "Romsey", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3841, "Practice name": "North Fawkner Family Clinic", "Postcode": 3060, "Suburb": "Fawkner", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 3918, "Practice name": "Southbank Medical Clinic", "Postcode": 3006, "Suburb": "Southbank", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 421, "Practice name": "WERRIBEE GROUP HEALTHCARE", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4219, "Practice name": "The Clinic Sunshine", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4263, "Practice name": "Tullamarine Clinic", "Postcode": 3043, "Suburb": "Gladstone Park", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4382, "Practice name": "Northcote Medical", "Postcode": 3070, "Suburb": "Northcote", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4394, "Practice name": "Polaris Medical Centre", "Postcode": 3083, "Suburb": "bundoora", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4454, "Practice name": "Barry Road Medical Centre", "Postcode": 3061, "Suburb": "Campbellfield", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4590, "Practice name": "Tristar Medical Group - Deer Park", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 461, "Practice name": "New Leaf Medical Clinic", "Postcode": 3061, "Suburb": "Campbellfield", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4629, "Practice name": "ST ALBANS FAMILY DOCTORS CLINIC", "Postcode": 3021, "Suburb": "St Albans", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4834, "Practice name": "McNAMARA CLINIC", "Postcode": 3042, "Suburb": "Airport West", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4912, "Practice name": "Tristar Medical Group Sunbury", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4914, "Practice name": "Doctors On Broadway", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 496, "Practice name": "TLC Primary Care- Clifton Hill", "Postcode": 3068, "Suburb": "Fitzroy North", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 4978, "Practice name": "Northland Medical  Centre", "Postcode": 3072, "Suburb": "Preston", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 5082, "Practice name": "Reservoir Medical Group", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 5294, "Practice name": "Reservoir Medical Centre", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 5363, "Practice name": "Brunswick Medical Group", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 5467, "Practice name": "Holistic Health House", "Postcode": 3060, "Suburb": "Fawkner", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 59, "Practice name": "Peak Medical GPC", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 706, "Practice name": "Resolve Medical Centre Melton", "Postcode": 3337, "Suburb": "Melton", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 719, "Practice name": "Resolve Medical Centre Sunbury", "Postcode": 3429, "Suburb": "Sunbury", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 734, "Practice name": "RESOLVE MEDICAL CENTRE COBURG", "Postcode": 3058, "Suburb": "Coburg", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 772, "Practice name": "EDWARDES STREET FAMILY CLINIC", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 791, "Practice name": "Your Care Medical Centre", "Postcode": 3039, "Suburb": "Moonee Ponds", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 805, "Practice name": "Myhealth Point Cook", "Postcode": 3030, "Suburb": "Point Cook", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 843, "Practice name": "Resolve Medical Centre Werribee ( Previously Werribee Plaza Medical Centre)", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 880, "Practice name": "Hopper Superclinic", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 891, "Practice name": "The Clinic 279", "Postcode": 3072, "Suburb": "Preston West", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 980, "Practice name": "WESTMED MEDICAL CENTRE", "Postcode": 3011, "Suburb": "Footscray", "Tier": 3, "NIP only": "No"}, {"SubmissionID": 139, "Practice name": "Sunshine Ultimate Care Clinic", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 1609, "Practice name": "Westmeadows Medical Centre", "Postcode": 3049, "Suburb": "Westmeadows", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 1954, "Practice name": "Victoria Harbour Medical Centre", "Postcode": 3008, "Suburb": "Docklands", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 2651, "Practice name": "The Doctors Werribee", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 3256, "Practice name": "Watergardens Medical Centre", "Postcode": 3038, "Suburb": "Taylors Lakes", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 3647, "Practice name": "Craigieburn Central Medical Centre", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 3723, "Practice name": "Palmers Medical Centre Woodlea (formerly called MyDoctor Woodlea)", "Postcode": 3336, "Suburb": "Aintree", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 3878, "Practice name": "755 Sayers Road Medical Centre", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 4076, "Practice name": "Dundas Street Medical Clinic", "Postcode": 3071, "Suburb": "Thornbury", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 4326, "Practice name": "Westgate Medical Centre", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 4355, "Practice name": "Westgate Medical Centre", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 5393, "Practice name": "cohealth Collingwood", "Postcode": 3066, "Suburb": "Collingwood", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 549, "Practice name": "Palmers Medical Centre", "Postcode": 3029, "Suburb": "Truganina", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 564, "Practice name": "Glenroy Medical Centre", "Postcode": 3046, "Suburb": "Glenroy", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 854, "Practice name": "Q1 Medical", "Postcode": 3030, "Suburb": "Werribee", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 865, "Practice name": "cohealth Kensington", "Postcode": 3031, "Suburb": "Kensington", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 923, "Practice name": "Q1 Medical - Hoppers Crossing", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 3, "NIP only": "Yes"}, {"SubmissionID": 130, "Practice name": "DoctorGaia Medical Clinic", "Postcode": 3058, "Suburb": "Coburg", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 1324, "Practice name": "Dr Irene Wong's medical practice", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 1480, "Practice name": "DR GLENN PEREIRA'S SURGERY", "Postcode": 3040, "Suburb": "Essendon", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 165, "Practice name": "Footscray Market Medical Clinic", "Postcode": 3011, "Suburb": "Footscray", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 210, "Practice name": "Hume Medical Centre", "Postcode": 3020, "Suburb": "Sunshine West", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 3537, "Practice name": "SCOTT STREET MEDICAL CENTRE", "Postcode": 3337, "Suburb": "Melton", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 4312, "Practice name": "Era Health", "Postcode": 3000, "Suburb": "Melbourne", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 5054, "Practice name": "BRIMBANK MEDICAL CENTRE", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 5353, "Practice name": "Meadow Heights Medical Practice", "Postcode": 3048, "Suburb": "Meadow Heights", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 5448, "Practice name": "Saint Mary Medical Centre", "Postcode": 3437, "Suburb": "Gisborne", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 798, "Practice name": "Essendon Family Medical Clinic", "Postcode": 3040, "Suburb": "Essendon", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 921, "Practice name": "Brunswick Central Medical Centre", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 942, "Practice name": "FUTURE HEALTH", "Postcode": 3039, "Suburb": "Moonee Ponds", "Tier": 4, "NIP only": "No"}, {"SubmissionID": 1337, "Practice name": "Maidstone Family Clinic", "Postcode": 3012, "Suburb": "Maidstone", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1394, "Practice name": "Errol Street Medical Centre", "Postcode": 3051, "Suburb": "North Melbourne", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1408, "Practice name": "Wellcrest Medical Centre Tarneit", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1471, "Practice name": "PASCOE VALE RD FAMILY CLINIC", "Postcode": 3047, "Suburb": "Broadmeadows", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1478, "Practice name": "TRANEIT CENTRAL MEDICAL CENTRE", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1485, "Practice name": "Altona Gate Medical Centre", "Postcode": 3025, "Suburb": "Altona North", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1526, "Practice name": "Plaza Medical Centre Keilor Downs", "Postcode": 3038, "Suburb": "Keilor Downs", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1582, "Practice name": "Friendly medical centre", "Postcode": 3030, "Suburb": "Werribee", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1686, "Practice name": "THE CLINIC COMPLETE FAMILY MEDICAL AND SKIN CENTRE", "Postcode": 3030, "Suburb": "Werribee", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1728, "Practice name": "Rapha Bulk Billing Medical Centre", "Postcode": 3340, "Suburb": "Darley", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1768, "Practice name": "Capstone Medical Centre", "Postcode": 3006, "Suburb": "Southbank", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1801, "Practice name": "Footscray Medical Centre", "Postcode": 3011, "Suburb": "Footscray", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2046, "Practice name": "ASCOT VALE HEALTH GROUP", "Postcode": 3032, "Suburb": "ASCOT VALE", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2116, "Practice name": "Western Family Practice", "Postcode": 3019, "Suburb": "Braybrook", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2138, "Practice name": "VIC Medical Doctors northcote", "Postcode": 3070, "Suburb": "Northcote", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2257, "Practice name": "The Clinic Altona", "Postcode": 3018, "Suburb": "Altona", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2361, "Practice name": "Millennium Medical Centre", "Postcode": 3146, "Suburb": "Footscray", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2448, "Practice name": "Medical Centre 291", "Postcode": 3030, "Suburb": "Werribee", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 2652, "Practice name": "Taylors Hill Medical Clinic", "Postcode": 3037, "Suburb": "Taylors Hill", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 304, "Practice name": "Medical Centre Kingsville", "Postcode": 3012, "Suburb": "Kingsville", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 3184, "Practice name": "MY FAMILY MEDICAL CLINIC", "Postcode": 3012, "Suburb": "Kingsville", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 356, "Practice name": "Keilor Downs Medi- Clinic", "Postcode": 3038, "Suburb": "Keilor Downs", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 366, "Practice name": "Brightside Medical", "Postcode": 3016, "Suburb": "Williamstown", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 3672, "Practice name": "St Mary's Clinic", "Postcode": 3021, "Suburb": "St Albans", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 3724, "Practice name": "St George's Family Practice", "Postcode": 3033, "Suburb": "Keilor East", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 3813, "Practice name": "Bluestone Family Medical Centre", "Postcode": 3016, "Suburb": "Williamstown", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 4157, "Practice name": "Military Road Medical Centre", "Postcode": 3034, "Suburb": "Avondale Heights", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 4651, "Practice name": "Deer Park Central Medical Clinic", "Postcode": 3023, "Suburb": "Deer Park", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 4959, "Practice name": "Sunshine Marketplace Medical Centre", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5128, "Practice name": "Central Health", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5340, "Practice name": "kings medical center", "Postcode": 3021, "Suburb": "Kings Park", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5364, "Practice name": "Hillside Medical Centre", "Postcode": 3036, "Suburb": "Hillside", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5369, "Practice name": "Western Family Medical Centre", "Postcode": 3023, "Suburb": "Cairnlea", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5384, "Practice name": "cohealth Fitzroy", "Postcode": 3065, "Suburb": "Fitzroy", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 5445, "Practice name": "Sussex Medical Centre", "Postcode": 3044, "Suburb": "Pascoe Vale", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 736, "Practice name": "One West Family CLinic", "Postcode": 3023, "Suburb": "Cairnlea", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 792, "Practice name": "Clinicare Fitzroy", "Postcode": 3065, "Suburb": "Fitzroy", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 839, "Practice name": "Clinicare North Fitzroy", "Postcode": 3068, "Suburb": "North Fitzroy", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 918, "Practice name": "Station Medical Centre", "Postcode": 3338, "Suburb": "Melton South", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 953, "Practice name": "Q1 Medical - Highpoint", "Postcode": 3032, "Suburb": "Maribyrnong", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 990, "Practice name": "Q1 Medical - Melton", "Postcode": 3337, "Suburb": "Melton", "Tier": 4, "NIP only": "Yes"}, {"SubmissionID": 1244, "Practice name": "Aspire Medical and Skin Centre", "Postcode": 3037, "Suburb": "Hillside", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 1535, "Practice name": "Premier Health Partners", "Postcode": 3003, "Suburb": "West Melbourne", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 2907, "Practice name": "WESTGROUP MEDICAL", "Postcode": 3021, "Suburb": "St Albans", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 4494, "Practice name": "Fawkner Street Clinic", "Postcode": 3040, "Suburb": "Essendon", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 5383, "Practice name": "Coburns Road Medical Clinic", "Postcode": 3337, "Suburb": "Melton", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 904, "Practice name": "Oakhill Clinic PTY LTD", "Postcode": 3073, "Suburb": "Reservoir", "Tier": 5, "NIP only": "No"}, {"SubmissionID": 1239, "Practice name": "Dallas Clinic", "Postcode": 3047, "Suburb": "Dallas", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 161, "Practice name": "My Doctor Coburg", "Postcode": 3058, "Suburb": "Coburg", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 1729, "Practice name": "Fawkner Family Medical Centre", "Postcode": 3060, "Suburb": "Fawkner", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 1829, "Practice name": "Murray Road Medical Centre", "Postcode": 3072, "Suburb": "Preston", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 2186, "Practice name": "Hampstead Drive Medical Centre", "Postcode": 3029, "Suburb": "Hoppers Crossing", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 2314, "Practice name": "Fairfield City Medical Centre", "Postcode": 3078, "Suburb": "Fairfield", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 30, "Practice name": "LOTUS MEDICAL CENTRE", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 3005, "Practice name": "Rosamond medical Centre", "Postcode": 3012, "Suburb": "Maidstone", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 389, "Practice name": "St Kyrollos Family Clinic", "Postcode": 3058, "Suburb": "Coburg", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 391, "Practice name": "Inner West Medical Center", "Postcode": 3013, "Suburb": "Yarraville", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4130, "Practice name": "Broadmeadows Place Medical Clinic", "Postcode": 3047, "Suburb": "Broadmeadows", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 417, "Practice name": "Preston Doctors Clinic", "Postcode": 3072, "Suburb": "Preston", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4228, "Practice name": "Flemington Medical Centre", "Postcode": 3031, "Suburb": "Flemington", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4253, "Practice name": "Hadfield Medical Clinic", "Postcode": 3046, "Suburb": "Hadfield", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4302, "Practice name": "Craigieburn Medical Centre", "Postcode": 3064, "Suburb": "Craigieburn", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4508, "Practice name": "BRUNSWICK COMMUNITY CLINIC", "Postcode": 3056, "Suburb": "Brunswick", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4586, "Practice name": "Meadows Medical Centre Vic", "Postcode": 3028, "Suburb": "Altona Meadows", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4748, "Practice name": "Cuthbert Medical Centre", "Postcode": 3047, "Suburb": "Broadmeadows", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4755, "Practice name": "Fawkner Health Care", "Postcode": 3060, "Suburb": "Fawkner", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4947, "Practice name": "Tarneit west Medical Centre", "Postcode": 3029, "Suburb": "Tarneit", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 5010, "Practice name": "Annadale Family Medical center", "Postcode": 3064, "Suburb": "Mickleham", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 5167, "Practice name": "Centreway Medical Centre", "Postcode": 3033, "Suburb": "East Keilor", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 72, "Practice name": "SUNSHINE CENTRAL MEDICAL CLINIC", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 747, "Practice name": "Dr Sheriff's Medical Clinic", "Postcode": 3038, "Suburb": "St Albans", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 758, "Practice name": "Glass Street Medical Clinic", "Postcode": 3040, "Suburb": "Essendon", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 94, "Practice name": "SUNSHINE BRIMBANK CLINIC", "Postcode": 3020, "Suburb": "SUNSHINE", "Tier": 5, "NIP only": "Yes"}, {"SubmissionID": 4467, "Practice name": "Bell Street Family Medical Centre", "Postcode": 3044, "Suburb": "Pascoe Vale South", "Tier": 6, "NIP only": "Yes"}]}}, {"mode": "vega-lite"});
+</script></div></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="Webscrapingexample.html" title="previous page">Web scraping example</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By IPDS NWMPHN<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
